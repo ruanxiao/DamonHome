@@ -1,10 +1,10 @@
 function Ship(ctx){
-	gameMonitor.im.loadImage(['/images/player.png']);
+	gameMonitor.im.loadImage(['/images/rabbit/rabbit_player.png']);
 	this.width = 80;
 	this.height = 80;
 	this.left = gameMonitor.w/2 - this.width/2;
 	this.top = gameMonitor.h - 2*this.height;
-	this.player = gameMonitor.im.createImage('/images/player.png');
+	this.player = gameMonitor.im.createImage('/images/rabbit/rabbit_player.png');
 
 	this.paint = function(){
 		ctx.drawImage(this.player, this.left, this.top, this.width, this.height);
@@ -100,7 +100,7 @@ function Food(type, left, id){
 	this.speed = 0.04 * Math.pow(1.2, Math.floor(gameMonitor.time/this.speedUpTime));
 	this.loop = 0;
 
-	var p = this.type == 0 ? '/images/food1.png' : '/images/food2.png';
+	var p = this.type == 0 ? '/images/rabbit/rabbit_food1.png' : '/images/rabbit/rabbit_food2.png';
 	this.pic = gameMonitor.im.createImage(p);
 }
 Food.prototype.paint = function(ctx){
@@ -171,7 +171,7 @@ var gameMonitor = {
 		bg.onload = function(){
           	ctx.drawImage(bg, 0, 0, _this.bgWidth, _this.bgHeight);          	
 		}
-		bg.src = '/images/bg.jpg';
+		bg.src = '/images/rabbit/rabbit_bg.jpg';
 
 		_this.initListener(ctx);
 
@@ -216,7 +216,7 @@ var gameMonitor = {
             //分享给好友的数据
             var wxData = {
                 "appId": "", 
-                "imgUrl" : "/images/icon.png",
+                "imgUrl" : "/images/rabbit/rabbit_icon.png",
                 "link" : "http://dev.360.cn/html/zhuanti/yutu.html",
                 "desc" : "进击的玉兔",
                 "title" : "“玩玉兔 抢月饼”"
@@ -225,7 +225,7 @@ var gameMonitor = {
             //朋友圈数据
             var wxDataPyq ={
             	"appId": "",
-                "imgUrl" : "/images/icon.png",
+                "imgUrl" : "/images/rabbit/rabbit_icon.png",
                 "link" : "http://dev.360.cn/html/zhuanti/yutu.html",
                 "desc" : "“玩玉兔 抢月饼”",
                 "title" : "进击的玉兔"
