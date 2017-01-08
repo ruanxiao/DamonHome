@@ -157,7 +157,7 @@ h5, h6          { font-weight: bolder }
 
     header nav ul li a:hover,
     header nav ul li a.selected{
-        color: #969595;
+        color: #1ABC9C;
     }
 
     header .footer{

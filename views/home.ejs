@@ -15,17 +15,17 @@
 
 <header>
     <div class="logo">
-        <a href="/home"><img src="/images/home/logo.png" title="Magnetic" alt="Magnetic"/></a>
+        <a href="/home" style="text-decoration:none"><h2>DAMON HOME</h2></a>
     </div><!-- end logo -->
 
     <div id="menu_icon"></div>
     <nav>
         <ul>
-            <li><a href="/home" class="selected">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">The Team</a></li>
-            <li><a href="#">Journal</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="#home" class="selected" id="home_link">Home</a></li>
+            <li><a href="#about" id="about_link">About</a></li>
+            <li><a href="#team" id="team_link">The Team</a></li>
+            <li><a href="#journal" id="journal_link">Journal</a></li>
+            <li><a href="#contact" id="contact_link">Contact Us</a></li>
         </ul>
     </nav><!-- end navigation menu -->
 
@@ -40,8 +40,8 @@
         </ul><!-- end social -->
 
         <div class="rights">
-            <p>Copyright © 2014 magnetic.</p>
-            <p>Template by <a href="">Pixelhint.com</a></p>
+            <p>Copyright © 2017 Damon.</p>
+            <p>Template by <a href="">www.xdamon.com</a></p>
         </div><!-- end rights -->
     </div><!-- end footer -->
 </header><!-- end header -->
@@ -150,7 +150,56 @@
 <section class="main clearfix" id="map" style="display: none">
 </section><!-- end main/map -->
 
-<script src="/javascripts/zepto.min.js"></script>
+<section class="main clearfix" id="about" style="display: none">
+    <div class="work">
+        <a href="inner.html">
+            <img src="/images/home/work2.jpg" class="media" alt=""/>
+            <div class="caption">
+                <div class="work_title">
+                    <h1>culpa qui officia deserunt mollit</h1>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+<section class="main clearfix" id="team" style="display: none">
+    <div class="work">
+        <a href="inner.html">
+            <img src="/images/home/work1.jpg" class="media" alt=""/>
+            <div class="caption">
+                <div class="work_title">
+                    <h1>culpa qui officia deserunt mollit</h1>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+<section class="main clearfix" id="journal" style="display: none">
+    <div class="work">
+        <a href="inner.html">
+            <img src="/images/home/work5.jpg" class="media" alt=""/>
+            <div class="caption">
+                <div class="work_title">
+                    <h1>culpa qui officia deserunt mollit</h1>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+<section class="main clearfix" id="contact" style="display: none">
+    <div class="work">
+        <a href="inner.html">
+            <img src="/images/home/work3.jpg" class="media" alt=""/>
+            <div class="caption">
+                <div class="work_title">
+                    <h1>culpa qui officia deserunt mollit</h1>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<script src="/javascripts/jquery.js"></script>
 <script type="text/javascript" src="/javascripts/home/main.js"></script>
 <script type="text/javascript" src="/javascripts/home/map.js"></script>
 </body>
