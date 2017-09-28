@@ -1,5 +1,6 @@
 # DamonHome
-www.xdamon.com server+web project（Nodejs+Ejs）
+体验网址：www.xdamon.com 
+server+web project（Nodejs+Ejs）
 
 1：一个简单的Node.js后台程序，极适合初入学习
 
