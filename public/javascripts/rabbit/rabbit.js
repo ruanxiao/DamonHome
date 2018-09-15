@@ -12,8 +12,8 @@ function Ship(ctx){
 
 	this.setPosition = function(event){
 		if(gameMonitor.isMobile()){
-			var tarL = event.changedTouches[0].clientX;
-			var tarT = event.changedTouches[0].clientY;
+			var tarL = event.originalEvent.changedTouches[0].clientX;
+			var tarT = event.originalEvent.changedTouches[0].clientY;
 		}
 		else{
 			var tarL = event.offsetX;
@@ -180,7 +180,7 @@ var gameMonitor = {
 	initListener : function(ctx){
 		var _this = this;
 		var body = $(document.body);
-		$(document).on(gameMonitor.eventType.move, function(event){
+        body.on(gameMonitor.eventType.move, function(event){
 			event.preventDefault();
 		});
 		body.on(gameMonitor.eventType.start, '.replay, .playagain', function(){
