@@ -180,7 +180,7 @@ var gameMonitor = {
 	initListener : function(ctx){
 		var _this = this;
 		var body = $(document.body);
-        body.on(gameMonitor.eventType.move, function(event){
+        $(document).on(gameMonitor.eventType.move, function(event){
 			event.preventDefault();
 		});
 		body.on(gameMonitor.eventType.start, '.replay, .playagain', function(){
